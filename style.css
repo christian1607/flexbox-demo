@@ -3,7 +3,9 @@ body {
 }
 .container {
     border: 6px solid black;
-    display: inline-flex;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap
 }
 .flex-item {
     color: white;

@@ -3,13 +3,14 @@ body {
 }
 .container {
     border: 6px solid black;
+    height: 500px;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap; 
     flex-flow: row; 
     justify-content: space-between; 
     justify-content: center; 
-    height: 400px;
+    align-items: center
    
 }
 .flex-item {
@@ -17,18 +18,21 @@ body {
     font-size: 1.5rem;
     padding: 1rem;
     text-align: center;
-    flex-grow: 1;
-  
+    flex-grow: 0.01;
+    flex-shrink: 3;
+    flex-basis: 50px;
 }
 .item-1 {
     background-color: #B4BF35;
-   
+    align-self: center;
 }
 .item-2 {
     background-color: #B95F21;
+    align-self: stretch;
 }
 .item-3 {
     background-color: #1C4C56;
+    align-self: flex-end;
 }
 .item-4 {
     background-color: #CfB276;
